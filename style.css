@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.page-wrap {
+  max-width: 1000px;
+  padding: 26px 28px 40px;
+  margin: 0 auto;
+}
+
+.page-title {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 7px;
+  padding: 1px 5px 2px;
+  border: 2px solid #c8c8c8;
+  outline: 1px solid #8c9ac5;
+  color: #222;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(20px, 3vw, 29px);
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.nav-frame {
+  min-height: 35px;
+  padding: 0 5px;
+  border: 2px solid #91d3dd;
+  box-shadow: 0 0 0 1px #e5eeee inset;
+  background: #f7f7f7;
+}
+
+.nav-frame .nav-link {
+  padding: 7px 8px;
+  color: #6877a0;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.nav-frame .nav-link.active {
+  color: #333;
+}
+
+.home-button,
+.card-header,
+.card-footer .btn {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.home-button {
+  margin-left: 8px;
+  padding: 4px 9px;
+  border-radius: 2px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.calculator-card {
+  width: min(100%, 420px);
+  margin: 30px auto 0;
+  border: 2px solid #8fd0dc;
+  border-radius: 0;
+  box-shadow: 0 0 0 1px #e7eeee inset;
+}
+
+.calculator-card .card-header {
+  margin: 4px 4px 0;
+  padding: 7px 8px;
+  border: 1px solid #d6b2a4;
+  border-radius: 0;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.calculator-card .card-body {
+  padding: 9px 10px 8px;
+}
+
+.form-row {
+  margin-bottom: 4px;
+}
+
+.form-row:last-child {
+  margin-bottom: 0;
+}
+
+.form-row .col-form-label {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+}
+
+.form-control,
+.form-select {
+  min-height: 27px;
+  padding: 3px 7px;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  font-size: 11px;
+}
+
+.calculator-card .card-footer {
+  margin: 0 4px 4px;
+  padding: 5px;
+  border: 2px solid #e4b7a8;
+  border-radius: 0;
+  background: #fafafa;
+}
+
+.card-footer .btn {
+  min-width: 44px;
+  padding: 3px 7px;
+  border-radius: 2px;
+  font-size: 11px;
+}
+
+@media (max-width: 480px) {
+  .page-wrap {
+    padding: 20px 12px;
+  }
+
+  .nav-frame .nav-link {
+    padding: 6px 5px;
+    font-size: 10px;
+  }
+
+  .calculator-card {
+    margin-top: 24px;
+  }
+}
